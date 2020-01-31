@@ -9,7 +9,7 @@ The toolkit focusses on calculating coverage inequality statistics from read cov
 The Gini coefficient is a metric used to measure the inequality within a dataset. 
 It is commonly used in economics to measure the distribution of income within a population, where it is represented by a value 
 between 0 and 1, with 0 representing perfectly even distribution, and higher values representing higher inequality of distribution. 
-This toolkit applies this coefficient to measure inequality of depth of coverage across a genome.\\
+This toolkit applies this coefficient to measure inequality of depth of coverage across a genome.\
 
 The Gini coefficient is calculated as:
 
