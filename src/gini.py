@@ -38,7 +38,7 @@ def gini(cov_array):
 
     s_cov_array = sort(cov_array)
 
-    cov_sum = cumsum(cov_array)
+    cov_sum = cumsum(s_cov_array)
     height_sum = cumsum(cov_sum)
     l_area_array = height_sum - cov_sum / 2
 
