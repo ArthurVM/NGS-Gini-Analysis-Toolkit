@@ -16,10 +16,10 @@ pandas
 
 import argparse
 import sys
-import numpy as  np
 import pandas as pd
 import time
 from itertools import islice
+from numpy import mean, sort, cumsum
 
 def coverage_reader(cov_file, w):
 
@@ -30,20 +30,21 @@ def coverage_reader(cov_file, w):
         if w == 1:
             return lines
         else:
-            cov_array = [np.mean(lines[i:i+w]) for i in range(0, len(lines), w)]
+            cov_array = [mean(lines[i:i+w]) for i in range(0, len(lines), w)]
 
     return cov_array
 
 def gini(cov_array):
 
-    s_cov_array = sorted(cov_array)
-    height, l_area = 0, 0
-    for c in s_cov_array:
-        height += c
-        l_area += height - c / 2.     ## where l_area is the area under the Lorenz curve
-    eq_area = height * len(cov_array) / 2.     ## where eq_area is the area under the line of equality
+    s_cov_array = sort(cov_array)
 
-    return (eq_area - l_area) / eq_area
+    cov_sum = cumsum(cov_array)
+    height_sum = cumsum(cov_sum)
+    l_area_array = height_sum - cov_sum / 2
+
+    eq_area = cov_sum[-1] * len(cov_array) / 2  # where eq_area is the area under the line of equality
+
+    return (eq_area - l_area_array[-1]) / eq_area
 
 def main(argv):
 
