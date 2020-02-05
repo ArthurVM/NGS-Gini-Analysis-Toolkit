@@ -1,4 +1,4 @@
-# Read-distribution-analysis
+# Read Distribution Toolkit
 
 This is a toolkit for analysing the coverage and distribution of reads over a genome sequence assembly.
 
