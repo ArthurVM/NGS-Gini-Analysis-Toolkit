@@ -16,7 +16,6 @@ Python3.6<=
 argparse
 numpy
 matplotlib
-seaborn
 """
 
 import argparse
