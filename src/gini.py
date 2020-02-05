@@ -16,6 +16,7 @@ numpy
 import argparse
 import sys
 import time
+import os
 from numpy import mean, sort, cumsum
 
 def coverage_reader(cov_file, w):
@@ -32,10 +33,12 @@ def coverage_reader(cov_file, w):
     return cov_array
 
 def gini(cov_array):
-  """Calculates the Gini coefficient of a coverage array isolated from a coverage .bed file
+    """Calculates the Gini coefficient of a coverage array isolated from a coverage .bed file
 
     Maps pretty well to A/(A+B) in its functionality, but effectively calculates Gini as the mean absolute difference.
     """
+    
+    s_cov_array=sort(cov_array)
 
     cov_sum = cumsum(s_cov_array)
     height_sum = cumsum(cov_sum)
