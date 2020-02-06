@@ -54,6 +54,11 @@ to indicate the distribution of reads mapping across the genome, where higher va
 
 **N.B.** This result must be analysed in context with the Gini value at maximum data granularity (window size 1).
 
+## Install
+
+Simply clone this git archive and install dependencies with
+`python3 -m pip install -r dependencies.txt`
+
 ## Usage
 
 This toolkit consists of 3 scripts:\
