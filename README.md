@@ -83,3 +83,10 @@ To generate the GG-curves for the dataset `myGenome1.cov`, `myGenome2.cov`, & `m
     python3 src/GG_out_merge.py --Gini_files myGenome1.GG myGenome2.GG myGenome3.GG -o allmyGenomes.GG
     python3 src/GG_curve.py allmyGenomes.GG
 #
+
+## References
+
+If you use any of these scripts, or GG-curves to analyse you data, please cite the article
+
+Morris, A., Pachebat, J., Tyson, G., Robinson, G., Chalmers, R., & Swain, M. (2020). Generating Reliable Genome Assemblies of Intestinal Protozoans from Clinical Samples for the Purpose of Biomarker Discovery. Communications in Computer and Information Science, In Press, 1–25.
+
