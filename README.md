@@ -75,7 +75,7 @@ To generate the Gini-Granularity curve of this genome, this data should be outpu
 
 To compare the read distribution of multiple genomes, `gini.py` should be ran (as above), followed by using the `GG_out_merge.py` script to merge each of the output files into a .tsv file. This can then the used as input for `GG_curve.py`.
 
-To generate the GG-curves for the dataset `myGenome1.cov`, `myGenome2.cov`, & `myGenome3.cov`, and calculate the GG-auc. We would run:\
+To generate the GG-curves for the dataset `myGenome1.cov`, `myGenome2.cov`, & `myGenome3.cov`, and calculate the GG-auc. We would run:
 #
     python3 src/gini.py myGenome1.cov -G 1 1000 5 > myGenome1.GG
     python3 src/gini.py myGenome2.cov -G 1 1000 5 > myGenome2.GG
