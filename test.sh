@@ -1,8 +1,8 @@
 root="."
 
 gini="python3 $root/src/gini.py"
-g_merge="python3 $root/src/GG_out_merge.py"
-gg_curve="python3 $root/src/GG_curve.py"
+g_merge="python3 $root/src/ggdatmerge.py"
+gg_curve="python3 $root/src/calcggcurve.py"
 
 test_dir="$root/test_data"
 
