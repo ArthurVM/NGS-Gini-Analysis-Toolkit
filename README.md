@@ -93,5 +93,5 @@ To generate the GG-curves for the dataset `myGenome1.cov`, `myGenome2.cov`, & `m
 
 If you use any of these scripts, or GG-curves to analyse you data, please cite the article
 
-Morris, A., Pachebat, J., Tyson, G., Robinson, G., Chalmers, R., & Swain, M. (2020). Generating Reliable Genome Assemblies of Intestinal Protozoans from Clinical Samples for the Purpose of Biomarker Discovery. Communications in Computer and Information Science, In Press, 1–25.
+Morris, A. V, Pachebat, J. A., Tyson, G., Robinson, G., Chalmers, R. M., & Swain, M. T. (2020). Generating Reliable Genome Assemblies of Intestinal Protozoans from Clinical Samples for the Purpose of Biomarker Discovery. Communications in Computer and Information Science, 1–26. https://doi.org/10.1007/978-3-030-44970-2_11
 
