@@ -1,4 +1,4 @@
-# Read Distribution Toolkit
+# NGS Gini Analysis Toolkit
 
 This is a toolkit for analysing the coverage and distribution of reads over a genome sequence assembly.
 
